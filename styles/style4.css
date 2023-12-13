@@ -1,0 +1,93 @@
+.lei-section{
+    background-color:#323945;
+    border-radius: 60px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1080px;
+    justify-content: center;
+}
+.lei-container1{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:750px;
+    height: 750px;
+    top: 15%;
+    left: 10%;
+    padding: 0;
+    margin: 0;
+}
+
+.lei-img{
+    width: 480px;
+    height: 590px;
+    position: relative;
+    left: 18%;
+    z-index: 2;
+}
+.lei-ellipse{
+    width:750px;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+.lei-imgDiv{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.lei-name{
+    height: 100%;
+    font-size: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    z-index: 1;
+    position: relative;
+    bottom: 7%;
+    text-shadow:
+    -1px -1px 0 #fff, 
+    1px -1px 0 #fff, 
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; 
+}
+.lei-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    left: 58%;
+    bottom: 0;
+    font-size: 30px;
+    color: gainsboro;
+    letter-spacing: 4px;
+}
+.lei-text1{
+    display:inline-flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+}
+.lei-text2{
+    display:inline-flex;
+}
+.lei-text3{
+    display:inline-flex;
+    margin-right:80px;
+    
+}
+.textLine2{
+    margin-top: 40px;
+    margin-bottom: -7px;
+    margin-right: 80px;
+    border-radius: 50px;
+
+    border-bottom: 2px solid white;
+}
+.lei-text4{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-right:80px;
+}

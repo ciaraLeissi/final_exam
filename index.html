@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head> 
+    <link href="styles\style1.css" rel="stylesheet">
+    <link href="styles\style2.css" rel="stylesheet">
+    <link href="styles\style3.css" rel="stylesheet">
+    <link href="styles\style4.css" rel="stylesheet">
+    <link href="styles\style5.css" rel="stylesheet">
+    <link href="styles\style6.css" rel="stylesheet">
+    <link href="styles\javascript.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+    
+</head>
+
+
+
+
+<body>
+<section class="section1">
+
+    <div class="container1">
+        <div class="hello">Hello!</div>
+            <div class="intro_text">
+                <p class="we-are">We are <span style="color: #FD853A";> <br> Justine</span>
+                    and <span style="color: #FD853A";>Ciara</span></p>
+        </div>
+            <div class="topImg">
+                <img class=topImgSrc src="img\top_pic.png">
+                <img class=topImgSrc1 src="img\ellipse3.png">
+            </div>
+    </div>
+
+    <div class="side_text1">
+        <div><img src="img\quote-up.png"></div>
+        <div class="quote1"><p>Welcome to our Personal Homepage!
+            <br> Final project in IT 304,
+            <br> Web System Technologies.
+        </p></div>
+    </div>  
+    <div class="sideTextRight">
+        <div><img src="img\5stars.png" class="imgStars"></div>
+        <div class="quote2"><p>  BSIT <br> 3DG1</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="containerNav">
+    <div class="welcome-div">
+        <div class="welcome-text">Welcome to</div>
+        <div class="welcome-text1">our Page!</div>
+    </div>
+<div class="cardContainer">
+
+    <div class="cardLei" id="cardLei-id">
+        <div class="column">
+            <p class="textFormat"> Roque, Ciara Lei M. 
+                <br>
+                <p class="textLine"> </p>
+            </p>
+        </div>  
+        <div class="column">
+            <img src="img/lei.png" class="imgSize" >
+        </div>  
+        <div class="columnButton">
+            <button class="buttonMeetLei">Meet Her</button>
+        </div>
+    </div>   
+
+
+    <div class="cardTine" id="cardTine-id">
+        <div class="column">
+             <p class="textFormat"> Tarre, Justine Charles N. 
+                <br>
+                <p class="textLine"> </p>
+             </p>
+        </div>  
+        <div class="column">
+            <img src="img/Tarre.jpg" class="imgSize" >
+        </div>  
+        <div class="columnButton">
+            <button class="buttonMeetTine">Meet Him</button>
+        </div>
+    </div>
+</div>
+</section>
+
+<script>
+    const welcomeText = document.querySelector('.welcome-text');
+    const topImgSrc = document.querySelector('.topImgSrc');
+    const welcomeText1 = document.querySelector('.welcome-text1');
+
+    welcomeText.addEventListener('mouseenter', ()=>{
+        welcomeText.style.cursor = 'pointer';
+        topImgSrc.src = '/img/leitine1.png';
+        topImgSrc.style.position='absolute';
+        topImgSrc.style.top = '460px';
+        topImgSrc.style.left= '210px';
+        
+        welcomeText.style.border='0';
+        welcomeText.style.background = 'rgba(255, 255, 255, 0.01)';
+        welcomeText.style.backdropFilter= 'blur(7.5px)';
+        welcomeText1.style.background='#FD853A';
+        welcomeText1.style.borderRadius='60px';
+        welcomeText1.style.border ='0.5px solid #D0D5DD';
+        welcomeText1.style.padding = '13px 16px';
+
+
+        
+    } );
+
+    welcomeText.addEventListener('mouseleave', () => {
+        topImgSrc.src = '/img/top_pic.png'; 
+        welcomeText.style.background='#FD853A';
+        welcomeText1.style.background = '';
+        welcomeText1.style.backdropFilter ='';
+        welcomeText1.style.padding = '';
+        welcomeText1.style.border ='';
+        welcomeText1.style.borderRadius='';
+
+        topImgSrc.style.position='';
+        topImgSrc.style.top = '';
+        topImgSrc.style.left='';
+        
+    });
+</script>
+
+
+<section class="containerFacts section3">
+    <div>
+        <p class="facts-title">Facts about <span style="color: #FD853A";> Justine</span>
+            and <span style="color: #FD853A";>Ciara</span></p>
+    </div>
+    
+    <div class="cardContainerFacts">
+        
+
+        <div class="cardFacts" id="cardQuestion-id">
+            <div class="columnFacts">
+                <div><p class="Heading">We're College Students at </p>
+                    <p class="subHeading">Malolos, Bulacan</p>
+                </div>
+            </div>
+            <div class="columnFacts">
+                <div><p class="Heading">Taking the Course</p>
+                    <p class="subHeading">A.Y. 2023-2024</p>
+                </div>
+            </div>
+            <div class="columnFacts">
+                <div><p class="Heading">With the Track </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="cardFacts" >
+            <div class="columnFacts"></div>
+                <img src="img\DottedLinesFacts.png" class="imgDimens">
+        </div>
+        
+
+        <div class="cardFacts" id="cardAnswer-id">
+            <div class="columnFacts1" id="">
+                <div><p class="Heading" style="margin-top: 90px">Bulacan State University</p>
+                </div>
+            </div>
+            <div class="columnFacts1" id="c">
+                <div><p class="Heading" id="cardToAnimateRight">Bachelor of Science in <br> Information Technology</p>
+                </div>
+            </div>
+            <div class="columnFacts1" style="margin-top: -30px">
+                <div><p class="Heading">Web and Mobile <br> App Development</p>
+                </div>
+            </div>
+        </div>
+    
+    
+    </div>
+</section>
+
+<section class="lei-section" id="lei-section-id">
+    <div class="lei-container1">
+        <div class="lei-imgDiv" id="cardToAnimate">
+                <img src="img\lei-1.png" class="lei-img">
+                <img src="img\ellipse-no-bg.png" class="lei-ellipse">
+        </div>
+        <div class="lei-name">
+            <p><b>Ciara Lei Roque</b></p>
+        </div>
+    </div>
+
+    <div class="lei-container2" id="cardToAnimateRight">
+        <div class="lei-text1">Hello!</div>
+        <p class="lei-textline"></p>
+        <div class="lei-text2">I am Ciara Lei M. Roque.</div>
+        <div class="lei-text3">I live in Guiguinto Bulacan.
+            Curiosity and the pursuit of satisfaction  became my compass, unto studying the field of IT.<br><br>
+            <br>Beyond the realms of academics and IT, I found peace in watching entertainment and playing music.
+        </div>
+        <p class="textLine2"> </p>
+        <div class="lei-text4">Age: 20 years old &emsp;&emsp;&emsp;&emsp;Favorite Color: pink,blue,all<br>
+            <br>Status: Taken &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Hobbies: Playing Guitar
+        </div>
+    </div>
+</section>
+
+<section class="justine-section" id="justine-section-id">
+    <div class="justine-container1">
+        <div class="justine-imgDiv">
+                <img src="img\tine.png" class="justine-img">
+                <img src="img\ellipse-no-bg.png" class="lei-ellipse">
+        </div>
+        <div class="justine-name">
+            <p><b>Justine Charles Tarre</b></p>
+        </div>
+    </div>
+
+    <div class="justine-container2">
+        <div class="justine-text1">Hello also!<br><br></div>
+        <div class="justine-text2">I am Justine Charles N. Tarre.</div>
+        <div class="justine-text3">I live in Plaridel Bulacan.
+            Sometimes, the unexpected road leads to the right path. Thanks to that, I'm currently loving the IT field.<br><br>
+            <br>Beyond the realms of academics and IT, I found peace in watching entertainment and playing .
+        </div>
+        <p class="justine-textLine2"> </p>
+        <div class="justine-text4">Age: 20 years old &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Favorite Color: Red<br>
+            <br>Status: Taken &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Hobbies: Taekwondo
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="containerContact">
+    <div class="contactTitle">
+        <p>Contact Us</p>
+    </div>
+    <div class="containerCardContact">
+        <div class="cardContact" >
+            <div class="columnContact">
+                <img class="imgSize1" src="img\lei.png">
+            </div>
+            
+            <div class="columnContact" >
+                <p class="textFormat1"><i class="fab fa-facebook-f"></i> Facebook: facebook.com/ciaralei.here</p>
+                <p class="textFormat1"><i class="fas fa-envelope"></i> Email: ciaralei.roque.m@bulsu.edu.ph </p>
+                <p class="textFormat1"><i class="fas fa-phone"></i> Contact No: 09300554641 </p>
+            </div>
+            </div>
+        
+
+        <div class="cardContact">
+            <div class="columnContact">
+                <img class="imgSize1" src="img\Tarre.jpg">
+            </div>
+            
+            <div class="columnContact" >
+                <p class="textFormat1"><i class="fab fa-facebook-f"></i> Facebook: facebook.com/justinecharles.tarre</p>
+                <p class="textFormat1"><i class="fas fa-envelope"></i> Email: justinecharles.tarre.n@bulsu.edu.ph </p>
+                <p class="textFormat1"><i class="fas fa-phone"></i> Contact No: 09300554641 </p>
+            </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+</section>
+
+</body>
+
+
+</html>
