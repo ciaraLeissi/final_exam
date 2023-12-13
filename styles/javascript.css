@@ -1,0 +1,49 @@
+/* CSS FOR SECTION 1*/
+.section1, .cardLei, .cardContact, .cardTine, .cardQuestion, .cardAnswer, 
+.section3, .justine-section, .lei-section, .sect3Title{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.sect3Title, .section1.animate, .cardLei.animate, .cardContact.animate, 
+.cardTine.animate, .cardQuestion.animate, .cardAnswer.animate, .lei-section.animate, .justine-section.animate, .section3.animate{
+    opacity: 1;
+}
+
+.animate-left {
+    animation: moveLeft 1s ease-in-out;
+}
+@keyframes moveLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.animate-right {
+    animation: moveRight 1s ease-in-out;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-top {
+    animation: moveTop 1s ease-in-out forwards;
+}
+@keyframes moveTop {
+    from {
+        transform: translateY(10);
+    }
+    to {
+        transform: translateY(-5%);
+    }
+}
